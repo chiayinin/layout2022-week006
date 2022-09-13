@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -45,24 +47,200 @@
     </header>
 
     <main>
-  <!-- banner -->
-  <section class="container">
-    <div class="row">
-      <div class="col-4 col-lg-12 banner">
-
-        <div class="col-4 col-lg-6 text-white w-100 text-center border border-white my-12">
-          <p class="">全台最豐富的程式家教</p>
-          <p class="mb-4">在實踐中化理想為現實</p>
+<!-- banner -->
+<section class="banner">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-4 col-lg-12 w-100 d-flex align-items-center">
+        <div class="col-4 col-lg-6 text-white w-100 text-center border border-white position-relative px-13 py-8">
+          <div class="position-absolute top-0 start-0 translate-middle square"></div>
+          <div class="position-absolute top-0 start-100 translate-middle square"></div>
+          <div class="position-absolute top-100 start-0 translate-middle square"></div>
+          <div class="position-absolute top-100 start-100 translate-middle square"></div>
+          <h2 class="mt-6 text-gradient">全台最豐富的程式家教</h2>
+          <h2 class="mb-4">在實踐中化理想為現實</h2>
           <p class="mb-6">全台最專業師資｜到府程式家教｜客製化課程</p>
         </div>
-        <div>
-          <p class="test text-white fs-7">文字大小權重測試，桌機16px，行動fs-7</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- course -->
+<section class="bg-black-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 course w-100 text-black-600 text-center d-flex py-11 gap-4 align-items-center">
+        <h2 class="py-7 fw-bold w-100 text-start text-white after-divider-start">手把手帶你<br/>親自到家教到會</h2>
+        <div class="card w-100 h-100">
+          <div class="card-body text-f-primary">
+            <span class="material-icons display-1 mb-4">code</span>
+            <h5 class="card-title fw-bold">超過 100 種專業課程</h5>
+            <p class="card-text">學習標準化的電腦形式語言<br/>培養運算思維和邏輯素養</p>
+          </div>
+        </div>
+        <div class="card w-100 h-100">
+          <div class="card-body text-f-primary">
+            <span class="material-icons display-1 mb-4">rocket_launch</span>
+            <h5 class="card-title fw-bold">高效學習</h5>
+            <p class="card-text">客製化專屬課表<br/>讓學習變簡單</p>
+          </div>
+        </div>
+        <div class="card w-100 h-100">
+          <div class="card-body text-f-primary">
+            <span class="material-icons display-1 mb-4">location_on</span>
+            <h5 class="card-title fw-bold">指定地點</h5>
+            <p class="card-text">專業老師到你指定的地點<br/>一對一高效學習</p>
+          </div>
         </div>
       </div>
-
     </div>
-  </section>
-  bg-black-400
+  </div>
+</section>
+<!-- sop -->
+<section class="sop bg-black-400">
+  <div class="container py-12">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="li-base fw-bold text-center mb-11 after-divider-center">預期上課流程</h3>
+      </div>
+    </div>
+    <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-f-primary list-unstyled">
+      <li class="col">
+        <div class="card h-100 border border-white">
+          <div class="card-body p-8">
+            <h4 class="card-title mb-3">預約</h4>
+            <p class="card-text">線上預約指定課程與老師<br/>由老師安排專屬課程</p>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card h-100 border border-white">
+          <div class="card-body p-8">
+            <h4 class="card-title mb-3">付款</h4>
+            <p class="card-text">支援各種支付方式<br/>提供12期分期付款</p>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card h-100 border border-white">
+          <div class="card-body p-8">
+            <h4 class="card-title mb-3">上課</h4>
+            <p class="card-text">地點由您指定<br/>密集性一對一教學</p>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card h-100 border border-white">
+          <div class="card-body p-8">
+            <h4 class="card-title mb-3">提供滿意度</h4>
+            <p class="card-text">提供課程滿意度及回饋<br/>讓我們持續成長與進步</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- Programming language -->
+<section class="pg-language bg-black-100 py-12">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="li-base fw-bold text-center mb-10 after-divider-center">你想要學習的程式，都在這裡</h3>
+      </div>
+    </div>
+  </div>
+  <!-- Swiper -->
+  <div class="swiper pgLgSwiper">
+    <ul class="swiper-wrapper list-unstyled text-f-primary fw-bold">
+      <li class="swiper-slide">JavaScript</li>
+      <li class="swiper-slide">HTML/CSS</li>
+      <li class="swiper-slide">SQL</li>
+      <li class="swiper-slide">Java</li>
+      <li class="swiper-slide">MySQL</li>
+      <li class="swiper-slide">Bash/Shell</li>
+      <li class="swiper-slide">C#</li>
+      <li class="swiper-slide">Python</li>
+      <li class="swiper-slide">PHP</li>
+      <li class="swiper-slide">C++</li>
+    </ul>
+  </div>
+</section>
+<!-- hot -->
+<section class="hot bg-black-400 py-12">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="lh-base fw-bold text-center mb-10 after-divider-center">熱門推薦課程</h3>
+    </div>
+  </div>
+  <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 list-unstyled">
+    <li class="col">
+      <div class="card h-100 bg-black-100 border-radius-24">
+        <figure class="m-auto my-4">
+          <img src="./assets/images/teacher01.jpg" class="img-fluid rounded-circle card-img-top mb-2" alt="tether photo">
+          <figcaption class="figure-captio text-center">Belinda</figcaption>
+        </figure>
+        <div class="card-body p-4 pb-6">
+          <h4 class="card-title mb-7 fw-bold">基礎前端 - HTML</h4>
+          <h5 class="text-primary mb-2 fs-6 ">前端語言</h5>
+          <p class="card-text">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+        </div>
+        <div class="card-footer border-black-700 d-flex justify-content-center align-items-center px-0 py-3">
+          <small class="fs-6 me-2">50分鐘</small><span class="font-monos fs-2 lh-1">NT$1600</span>
+        </div>
+      </div>
+    </li>
+    <li class="col">
+      <div class="card h-100 bg-black-100 border-radius-24">
+        <figure class="m-auto my-4">
+          <img src="./assets/images/teacher02.jpg" class="img-fluid rounded-circle card-img-top mb-2" alt="tether photo">
+          <figcaption class="figure-captio text-center">Guava</figcaption>
+        </figure>
+        <div class="card-body p-4 pb-6">
+          <h4 class="card-title mb-7 fw-bold">2022 Python 全攻略｜從入門到實務</h4>
+          <h5 class="text-primary mb-2 fs-6 ">後端語言</h5>
+          <p class="card-text">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
+        </div>
+        <div class="card-footer border-black-700 d-flex justify-content-center align-items-center px-0 py-3">
+          <small class="fs-6 me-2">50分鐘</small><span class="font-monos fs-2 lh-1">NT$2200</span>
+        </div>
+      </div>
+    </li>
+    <li class="col">
+      <div class="card h-100 bg-black-100 border-radius-24">
+        <figure class="m-auto my-4">
+          <img src="./assets/images/teacher03.jpg" class="img-fluid rounded-circle card-img-top mb-2" alt="tether photo">
+          <figcaption class="figure-captio text-center">Joe</figcaption>
+        </figure>
+        <div class="card-body p-4 pb-6">
+          <h4 class="card-title mb-7 fw-bold">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h4>
+          <h5 class="text-primary mb-2 fs-6 ">行動應用開發</h5>
+          <p class="card-text">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
+        </div>
+        <div class="card-footer border-black-700 d-flex justify-content-center align-items-center px-0 py-3">
+          <small class="fs-6 me-2">50分鐘</small><span class="font-monos fs-2 lh-1">NT$1800</span>
+        </div>
+      </div>
+    </li>
+    <li class="col">
+      <div class="card h-100 bg-black-100 border-radius-24">
+        <figure class="m-auto my-4">
+          <img src="./assets/images/teacher04.jpg" class="img-fluid rounded-circle card-img-top mb-2" alt="tether photo">
+          <figcaption class="figure-captio text-center">Lina</figcaption>
+        </figure>
+        <div class="card-body p-4 pb-6">
+          <h4 class="card-title mb-7 fw-bold">Linux 零基礎七天入門｜入門到實務</h4>
+          <h5 class="text-primary mb-2 fs-6 ">作業系統與伺服器</h5>
+          <p class="card-text">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
+        </div>
+        <div class="card-footer border-black-700 d-flex justify-content-center align-items-center px-0 py-3">
+          <small class="fs-6 me-2">50分鐘</small><span class="font-monos fs-2 lh-1">NT$1100</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</section>
 </main>
 
 
@@ -70,6 +248,8 @@
         <p class="text-black-300 font-mono text-center py-3 py-lg-4">Coding Home © 2022 All Rights Reserved</p>
     </footer>
 
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
