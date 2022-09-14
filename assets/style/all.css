@@ -15445,6 +15445,12 @@ body {
   line-height: 37px;
 }
 
+@media screen and (min-width: 992px) {
+  .text-lg-start {
+    text-align: start;
+  }
+}
+
 .after-divider-center {
   position: relative;
 }
@@ -15457,6 +15463,13 @@ body {
   width: 50px;
   height: 3px;
   background-color: #62DB54;
+  left: 43%;
+}
+
+@media screen and (min-width: 992px) {
+  .after-divider-center:after {
+    left: 48%;
+  }
 }
 
 .after-divider-start {
@@ -15515,6 +15528,10 @@ body {
 
 .mx-12px {
   margin: 0 12px;
+}
+
+.isolate {
+  isolation: isolate;
 }
 
 .pgLgSwiper .swiper-wrapper {
@@ -15590,13 +15607,14 @@ footer p {
   background: url("../images/bg_home_mobile.jpg") center center no-repeat;
   background-size: cover;
   width: 100%;
-  height: 680px;
+  height: 336px;
 }
 
 @media screen and (min-width: 992px) {
   .banner {
     background: url("../images/bg_home.jpg");
     background-size: contain;
+    height: 680px;
   }
 }
 
@@ -15607,31 +15625,25 @@ footer p {
 }
 
 .banner h2, .banner .h2 {
-  font-size: 48px;
-  line-height: 1.5;
-}
-
-.banner p {
   font-size: 24px;
   line-height: 35px;
-  font-weight: 500;
 }
 
 @media screen and (min-width: 992px) {
-  .banner p {
+  .banner h2, .banner .h2 {
     font-size: 48px;
-    line-height: 70px;
+    line-height: 1.5;
   }
 }
 
-.banner p:last-child {
+.banner p {
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
 }
 
 @media screen and (min-width: 992px) {
-  .banner p:last-child {
+  .banner p {
     font-size: 18px;
     line-height: 26px;
   }
@@ -15811,6 +15823,16 @@ footer p {
   background: url("../images/info04.jpg") center center/cover;
 }
 
+.article {
+  margin-top: 368px;
+}
+
+@media screen and (min-width: 992px) {
+  .article {
+    margin-top: 0;
+  }
+}
+
 .article .squareRounded {
   display: none;
   width: 32px;
@@ -15858,13 +15880,19 @@ footer p {
 
 .feedback .swiper {
   width: 100%;
-  height: 429px;
+  height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .feedback .swiper {
+    height: 429px;
+  }
 }
 
 .feedback .swiper-img {
   top: 0;
   left: 10px;
-  width: calc(100% - 5px);
+  width: calc(100% - 12px);
   height: 213px;
   left: 5px;
   margin-bottom: 40px;
@@ -15908,6 +15936,7 @@ footer p {
   position: relative;
   width: 100%;
   padding: 24px;
+  margin-top: 320px;
   border-radius: 24px 24px 24px 0;
 }
 
@@ -15915,6 +15944,9 @@ footer p {
   position: absolute;
   width: 80px;
   height: 80px;
+  right: 24px;
+  top: -50px;
+  bottom: auto;
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
@@ -15978,6 +16010,7 @@ footer p {
   left: 30%;
   z-index: 10;
   transform: none;
+  margin-top: 32px;
 }
 
 @media screen and (min-width: 992px) {
@@ -15986,7 +16019,12 @@ footer p {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+    margin-top: 0;
   }
+}
+
+.subscribe .material-symbols-outlined {
+  font-size: 80px;
 }
 
 .subscribe a:hover {
