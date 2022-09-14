@@ -26,5 +26,22 @@ var swiper = new Swiper(".pgLgSwiper", {
       slidesPerView: 1
     }
   }
+}); // feedBack Swiper
+
+var feedBackSwiper = new Swiper('.feedBackSwiper', {
+  // Optional parameters
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
 });
 //# sourceMappingURL=all.js.map
