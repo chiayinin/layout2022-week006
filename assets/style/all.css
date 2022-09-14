@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url(https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC&family=Roboto&family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -15499,6 +15500,14 @@ body {
   background-color: rgba(28, 28, 28, 0.9);
 }
 
+.rounded-24 {
+  border-radius: 24px;
+}
+
+.icon-fill {
+  font-variation-settings: "FILL" 1;
+}
+
 .pgLgSwiper .swiper-wrapper {
   margin: 0;
 }
@@ -15838,12 +15847,12 @@ footer p {
   background-size: cover;
 }
 
-.swiper {
+.feedback .swiper {
   width: 100%;
   height: 429px;
 }
 
-.swiper-img {
+.feedback .swiper-img {
   top: 0;
   left: 10px;
   width: calc(100% - 5px);
@@ -15854,7 +15863,7 @@ footer p {
   position: relative;
 }
 
-.swiper-img::after {
+.feedback .swiper-img::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -15867,33 +15876,33 @@ footer p {
 }
 
 @media screen and (min-width: 992px) {
-  .swiper-img::after {
+  .feedback .swiper-img::after {
     left: -5px;
     top: 5px;
   }
 }
 
-.swiper-img img {
+.feedback .swiper-img img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 24px;
 }
 
 @media screen and (min-width: 992px) {
-  .swiper-img {
+  .feedback .swiper-img {
     width: 525px;
     height: 381px;
   }
 }
 
-.swiper .card {
+.feedback .swiper .card {
   position: relative;
   width: 100%;
   padding: 24px;
   border-radius: 24px 24px 24px 0;
 }
 
-.swiper .card-img {
+.feedback .swiper .card-img {
   position: absolute;
   width: 80px;
   height: 80px;
@@ -15903,7 +15912,7 @@ footer p {
 }
 
 @media screen and (min-width: 992px) {
-  .swiper .card-img {
+  .feedback .swiper .card-img {
     width: 100px;
     height: 100px;
     right: 22px;
@@ -15915,7 +15924,7 @@ footer p {
 }
 
 @media screen and (min-width: 992px) {
-  .swiper .card {
+  .feedback .swiper .card {
     position: absolute;
     width: 45%;
     padding: 32px;
@@ -15924,11 +15933,11 @@ footer p {
   }
 }
 
-.swiper .swiper-button-next:after, .swiper .swiper-button-prev:after {
+.feedback .swiper .swiper-button-next:after, .feedback .swiper .swiper-button-prev:after {
   content: '';
 }
 
-.swiper-button-next, .swiper-button-prev {
+.feedback .swiper-button-next, .feedback .swiper-button-prev {
   position: unset;
   width: 24px;
   height: 24px;
@@ -15936,22 +15945,22 @@ footer p {
   color: #62DB54;
 }
 
-.swiper .swiper-pagination {
+.feedback .swiper .swiper-pagination {
   position: unset;
   width: auto;
 }
 
-.swiper .swiper-pagination .swiper-pagination-bullet {
+.feedback .swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #62DB54;
   opacity: initial;
 }
 
-.swiper .swiper-pagination .swiper-pagination-bullet-active {
+.feedback .swiper .swiper-pagination .swiper-pagination-bullet-active {
   width: 16px;
   border-radius: 100px;
 }
 
-.swiper-buttons {
+.feedback .swiper-buttons {
   position: initial;
   -webkit-transform: none;
       -ms-transform: none;
@@ -15963,12 +15972,16 @@ footer p {
 }
 
 @media screen and (min-width: 992px) {
-  .swiper-buttons {
+  .feedback .swiper-buttons {
     position: absolute;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+}
+
+.subscribe a:hover {
+  background-color: #62DB54;
 }
 
 /*# sourceMappingURL=all.css.map */
