@@ -15440,6 +15440,11 @@ body {
   color: transparent;
 }
 
+.fs-32 {
+  font-size: 32px;
+  line-height: 37px;
+}
+
 .after-divider-center {
   position: relative;
 }
@@ -15506,6 +15511,10 @@ body {
 
 .icon-fill {
   font-variation-settings: "FILL" 1;
+}
+
+.mx-12px {
+  margin: 0 12px;
 }
 
 .pgLgSwiper .swiper-wrapper {
@@ -15982,6 +15991,69 @@ footer p {
 
 .subscribe a:hover {
   background-color: #62DB54;
+}
+
+.courseInfo ul.nav > li:hover {
+  color: #62DB54;
+  border: 1px solid #62DB54 !important;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.courseInfo .card {
+  border-radius: 24px;
+}
+
+.courseInfo .card figure {
+  width: 100px;
+  height: 100px;
+}
+
+.courseInfo .card h4, .courseInfo .card .h4 {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+@media screen and (min-width: 992px) {
+  .courseInfo .card h4, .courseInfo .card .h4 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.courseInfo .card-footer {
+  width: 100%;
+}
+
+.courseInfo .card-footer a {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .courseInfo .card-footer {
+    width: auto;
+  }
+}
+
+.courseInfo .btn-book:hover {
+  background-color: #62DB54;
+}
+
+.courseInfo .btnbtn {
+  color: #ffffff;
+  background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
+  background: linear-gradient(104deg, #09ACF5, #62DB54);
+  border: 1px solid transparent;
+}
+
+.courseInfo .btnbtn:hover {
+  background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
+  background: linear-gradient(104deg, #09ACF5, #62DB54);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border: 1px solid #62DB54;
 }
 
 /*# sourceMappingURL=all.css.map */
