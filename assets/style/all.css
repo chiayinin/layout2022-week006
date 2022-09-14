@@ -15793,4 +15793,42 @@ footer p {
   background: url("../images/info04.jpg") center center/cover;
 }
 
+.article .squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+}
+
+.article .squareRounded-topLeft {
+  border-top: 2px solid #62DB54;
+  border-left: 2px solid #62DB54;
+  border-top-left-radius: 10px;
+}
+
+.article .squareRounded-topRight {
+  border-top: 2px solid #62DB54;
+  border-right: 2px solid #62DB54;
+  border-top-right-radius: 10px;
+}
+
+.article .squareRounded-bottomLeft {
+  border-bottom: 2px solid #62DB54;
+  border-left: 2px solid #62DB54;
+  border-bottom-left-radius: 10px;
+}
+
+.article .squareRounded-bottomRight {
+  border-bottom: 2px solid #62DB54;
+  border-right: 2px solid #62DB54;
+  border-bottom-right-radius: 10px;
+}
+
+.article .card {
+  background: #000;
+}
+
+.article .card:hover .squareRounded {
+  display: block;
+}
+
 /*# sourceMappingURL=all.css.map */
